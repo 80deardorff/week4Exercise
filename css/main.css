@@ -1,0 +1,41 @@
+body {
+  text-align: center;
+}
+.box {
+  display: inline-block;
+  height: 400px;
+  width: 25%;
+  /* margin: -2px; */
+}
+.red {
+  background-color: pink;
+}
+.yellow {
+  background-color: lightyellow;
+}
+.blue {
+  background-color: lightblue;
+}
+.green {
+  background-color: lightgreen;
+}
+.container {
+  height: 200px;
+  width: 200px;
+  background-color: lightgrey;
+}
+@media (max-width: 600px) {
+  .yellow,
+  .blue {
+    display: none;
+  }
+  .red,
+  .green {
+    width: 50%;
+  }
+}
+@media (min-width: 1000px) {
+  .box {
+    width: 100%;
+  }
+}
